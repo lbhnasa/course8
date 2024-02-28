@@ -4,11 +4,10 @@ import logo from '../images/Logo.svg'
 function Nav() {
  return (
     <nav>
-       
-    <ul>
         <a href='/'>
         <img src={logo} alt='logo'/>
         </a>
+    <ul>
         <li>
             <a href="/">Home</a>
         </li>
