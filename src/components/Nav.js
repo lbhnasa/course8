@@ -1,37 +1,25 @@
-import React from "react";
-import logo from '../images/Logo.svg'
+import { useState } from "react";
+import NavBar from './NavBar';
+import Hamburger from '../images/hamburger.png';
+import Close from '../images/close.png';
+
+
+const [navActive, setNavActive] = useState("");
+function handleToggle() {
+     setNavActive(!navActive);
+}
 
 function Nav() {
- return (
-    <nav>
-        <a href='/'>
-        <img src={logo} alt='logo'/>
-        </a>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/">About</a>
-        </li>
-        <li>
-            <a href="/">Services</a>
-        </li>
-        <li>
-            <a href="/">Reservation</a>
-        </li>
-        <li>
-            <a href="/">Menu</a>
-        </li>
-        <li>
-            <a href="/">Online Order</a>
-        </li>
-        <li>
-            <a href="/">Log in</a>
-        </li>
-    </ul>
-    </nav>
- )
+    return(
+        <nav>
+            <img
+            src={require('../images/logo.png')}
+            alt='Little Lemon Logo'
+            >
+            
+            </img>
+        </nav>
+    )
 }
 
 export default Nav;
