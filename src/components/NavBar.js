@@ -1,19 +1,19 @@
+import React from "react";
 import { Link } from "react-router-dom"
 
 
 function NavBar(props)  {
     return(
         <menu>
-            {props.device === "mobile" ? ("") :
-                (
-                    <Link to ='/'>
-                        <img 
-                            src={require("../images/Logo.svg")}
-                            alt="Little Lemon Logo">
-                        </img>
-
-                    </Link>
-                )}
+            {props.device === "mobile" ? (
+                ""
+                ) : (
+            <Link to ='/'>
+                <img 
+                    src={require("../images/Logo.svg")}
+                    alt="Little Lemon Logo"/>
+            </Link>
+        )}
         <Link to='/'>
             <h1>Home</h1>
         </Link>
@@ -33,7 +33,6 @@ function NavBar(props)  {
             <h1>Login</h1>
         </Link>
         </menu>
-
     )
 }
 

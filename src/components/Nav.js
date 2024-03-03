@@ -1,25 +1,31 @@
 import { useState } from "react";
 import NavBar from './NavBar';
+import logo from '../images/logo.png';
 import Hamburger from '../images/hamburger.png';
 import Close from '../images/close.png';
 
+function Nav() {
 
-const [navActive, setNavActive] = useState("");
+const [navActive, setNavActive] = useState(false);
 function handleToggle() {
      setNavActive(!navActive);
 }
 
-function Nav() {
     return(
-        <nav>
-            <img
-            src={require('../images/logo.png')}
-            alt='Little Lemon Logo'
-            >
-            
-            </img>
-        </nav>
-    )
+    <nav>
+      
+        <img
+        src={logo}
+        alt='Little Lemon Logo'/>
+
+        <button onClick={handleToggle}>
+            <img src={navActive ? Close : Hamburger} alt="Ative or inactive NavBar"/>
+        </button>
+      
+        <NavBar device='desktop'/>
+        {navActive ? <NavBar device="mobile"/> : ""}
+    </nav>
+    );
 }
 
 export default Nav;

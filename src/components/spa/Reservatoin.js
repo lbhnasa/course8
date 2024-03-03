@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Footer() {
+function Reservation() {
     return(
         <>
         </>
     )
 }
 
-export default Footer;
+export default Reservation;
