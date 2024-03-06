@@ -17,19 +17,19 @@ function NavBar(props)  {
         <Link to='/'>
             <h1>Home</h1>
         </Link>
-        <Link to='/About'>
+        <Link to='/about'>
             <h1>About</h1>
         </Link>
-        <Link to='/Menu'>
+        <Link to='/menu'>
             <h1>Menu</h1>
         </Link>
-        <Link to='/Reservation'>
+        <Link to='/reservation'>
             <h1>Reservation</h1>
         </Link>
-        <Link to='/Order'>
+        <Link to='/order'>
             <h1>Order</h1>
         </Link>
-        <Link to='/Login'>
+        <Link to='/login'>
             <h1>Login</h1>
         </Link>
         </menu>

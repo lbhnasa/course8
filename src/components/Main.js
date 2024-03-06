@@ -13,12 +13,11 @@ function Main () {
     return (
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/About" element={<About/>} />
-            <Route path="/Reservation" element={<Reservation/>} />
-            <Route path="/Orders" element={<Orders/>} />
-            <Route path="/Login" element={<Login/>} />
-            <Route path="/Confirmation" element={<Confirmation/>} />
-            
+            <Route path="/about" element={<About/>} />
+            <Route path="/reservation" element={<Reservation/>} />
+            <Route path="/orders" element={<Orders/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/confirmation" element={<Confirmation/>} />
         </Routes>
     )
 }
