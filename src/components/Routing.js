@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './spa/Home';
 import About from './spa/About';
 import Reservation from './spa/Reservatoin';
@@ -19,7 +19,7 @@ function Main () {
             <Route path="/login" element={<Login/>} />
             <Route path="/confirmation" element={<Confirmation/>} />
         </Routes>
-    )
+    );
 }
 
 

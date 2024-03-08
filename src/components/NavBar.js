@@ -4,35 +4,33 @@ import { Link } from "react-router-dom"
 
 function NavBar(props)  {
     return(
-        <menu>
-            {props.device === "mobile" ? (
-                ""
-                ) : (
+        <ul className="navbar-menu">
+            
             <Link to ='/'>
-                <img 
-                    src={require("../images/Logo.svg")}
-                    alt="Little Lemon Logo"/>
+                <img  className="nav-image"
+                    src={require("../images/logo.png")}
+                    alt="Little Lemon Logo2"/>
             </Link>
-        )}
-        <Link to='/'>
+        
+        <Link className="hover-effect" to='/'>
             <h1>Home</h1>
         </Link>
-        <Link to='/about'>
+        <Link className="hover-effect" to='/about'>
             <h1>About</h1>
         </Link>
-        <Link to='/menu'>
+        <Link className="hover-effect" to='/menu'>
             <h1>Menu</h1>
         </Link>
-        <Link to='/reservation'>
+        <Link className="hover-effect" to='/reservation'>
             <h1>Reservation</h1>
         </Link>
-        <Link to='/order'>
+        <Link className="hover-effect" to='/order'>
             <h1>Order</h1>
         </Link>
-        <Link to='/login'>
+        <Link className="hover-effect" to='/login'>
             <h1>Login</h1>
         </Link>
-        </menu>
+        </ul>
     )
 }
 

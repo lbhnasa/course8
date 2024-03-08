@@ -13,7 +13,7 @@ function handleToggle() {
 
     return(
     <nav>
-      <img
+      <img className="nav-image"
         src={logo}
         alt='Little Lemon Logo'/>
 

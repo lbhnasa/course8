@@ -1,3 +1,64 @@
 * {
     font-family: "Markazi Text", "Karla", serif;
 }
+
+
+input,
+select,
+option,
+textarea {
+  background-color: #eeeeee;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 0.2rem;
+  resize: none;
+}
+
+
+a:visited,
+Link:visited,
+a:link,
+Link:link {
+  text-decoration: none;
+  color: black;
+}
+
+.burger{
+    display: none;
+}
+
+.nav-image {
+    max-height: 4rem;
+    margin-top: 0.7rem;
+}
+
+.hover-effect:hover {
+    background-color: #f4ce14;
+    border-radius: 10px;
+    transition: 0.25s;
+
+  }
+
+ul {
+    list-style: none;
+    display: grid;
+  }
+
+.navbar-menu {
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+  }
+
+.navbar-menu > li,
+.navbar-menu > a,
+.navbar-menu > Link {
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-menu {
+        grid-template-rows: repeat(2, 1fr);
+   }}
+  
