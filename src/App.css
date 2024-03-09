@@ -23,13 +23,15 @@ Link:link {
   color: black;
 }
 
-.burger{
-    display: none;
-}
+
 
 .nav-image {
     max-height: 4rem;
     margin-top: 0.7rem;
+}
+
+.nav-image:hover {
+ opacity: 0.7;
 }
 
 .hover-effect:hover {
@@ -57,6 +59,44 @@ ul {
   padding-right: 0.5rem;
 }
 
+
+.call-to-action {
+    background-color: #495e57;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem 5rem 1.2rem 5rem;
+    margin-top: -1.4rem;
+  }
+
+  .hero-text > h1 {
+    font-size: 3rem;
+    margin-top: 0rem;
+    margin-bottom: -3rem;
+    columns: #f4ce14;
+  }
+  
+  .hero-text > h2 {
+    font-size: 2.5rem;
+    columns: #f4ce14;
+  }
+
+.hero-image {
+    max-height: 300px;
+    border-radius: 15px;
+    display: flex;
+  }
+
+.reservationBtn {
+    background-color:#ffd505;
+    border-radius: 10px;
+    padding: 15px;
+    
+  }
+
+.reservationBtn:hover {
+ background-color:#d2b628 ; 
+  }
 @media only screen and (max-width: 600px) {
     .navbar-menu {
         grid-template-rows: repeat(2, 1fr);

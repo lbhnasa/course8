@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import NavBar from './NavBar';
 import logo from '../images/logo.png';
@@ -12,7 +13,7 @@ function handleToggle() {
 }
 
     return(
-    <nav>
+    <nav className="burger">
       <img className="nav-image"
         src={logo}
         alt='Little Lemon Logo'/>
