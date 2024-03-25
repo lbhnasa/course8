@@ -20,9 +20,8 @@ Link:visited,
 a:link,
 Link:link {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
-
 
 
 .nav-image {
@@ -42,8 +41,8 @@ Link:link {
   }
 
 ul {
-    list-style: none;
     display: grid;
+    grid-template-columns: auto;
   }
 
 .navbar-menu {
@@ -66,7 +65,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1.25rem 5rem 1.2rem 5rem;
-    margin-top: -1.4rem;
+    margin-top: auto;
   }
 
   .hero-text > h1 {
@@ -94,9 +93,76 @@ ul {
     
   }
 
+.reservation-form {
+    text-align: center;
+}
+
 .reservationBtn:hover {
  background-color:#d2b628 ; 
   }
+
+  .action-button {
+    border-radius: 10px;
+    background-color: #f4ce14;
+    padding: 5px;
+    border-radius: 0.2rem;
+    font-family: "Karla";
+    font-size: 2rem;
+  }
+
+.action-button:hover {
+    background-color: #495e57;
+    color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #edefee;
+    transition: 0.2s;
+  }
+
+
+  footer {
+    background-color: #495e57;
+    color: #ffffff;
+    padding-bottom: 1rem;
+    margin-top: -1.4rem;
+  }
+
+
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+}
+
+.footer-logo {
+  padding: 10px;
+  max-height: 200px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-list {
+  list-style-type: none;
+  color: #ffffff;
+  /* text-align: center;
+  float: left; */
+  }
+
+.footer-list > a, Link {
+  color: #ffffff;
+}
+
+.confirmation {
+  text-align: center;
+  margin: 1em;
+  
+}
+
+
+
 @media only screen and (max-width: 600px) {
     .navbar-menu {
         grid-template-rows: repeat(2, 1fr);
